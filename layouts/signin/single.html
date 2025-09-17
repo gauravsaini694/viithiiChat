@@ -1,0 +1,79 @@
+ {{ define "main" }}
+ <div class="main-container">
+        <!-- Left Section - Sign In Form -->
+        <div class="left-section">
+            
+            <div class="signin-form">
+                <a href="/" class="back-link">Homepage</a>
+                <h1 class="signin-title">Sign In</h1>
+                <p class="signin-subtitle">Enter your email address to get started</p>
+                
+                <button class="google-signin">
+                    <svg class="google-icon" viewBox="0 0 24 24">
+                        <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                        <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                        <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                        <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                    </svg>
+                    Sign in with Google
+                </button>
+                
+                <div class="divider">OR</div>
+                
+                <form>
+                    <div class="form-group">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control" placeholder="Your email address">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Password</label>
+                        <div class="password-input">
+                            <input type="password" class="form-control" placeholder="Your password" id="password">
+                            <button type="button" class="password-toggle" onclick="togglePassword()">
+                                <i class="far fa-eye" id="toggleIcon"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="signin-btn">Sign In</button>
+                </form>
+                
+                <div class="forgot-password">
+                    <a href="#">Forgot password?</a>
+                </div>
+                
+                <div class="form-footer">
+                    Don't have an account? <a href="#">Create Account</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Right Section - Welcome Content -->
+        <div class="right-section">
+            <div class="welcome-content">
+                <h1 class="welcome-title">Welcome to the future</h1>
+                <p class="welcome-subtitle">Your Ultimate 24/7 AI-Powered Customer Support Assistant</p>
+                
+                <div class="brand-name">GaliChat</div>
+                
+                <div class="testimonial">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    
+                    <p class="testimonial-text">
+                        "It's exactly what I was looking for. It engages our site visitors with the right answers and collects their information, so we get more leads."
+                    </p>
+                    
+                    <div class="testimonial-author">Robert Tatel</div>
+                    <div class="testimonial-title">CEO @PlayVertical</div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{end}}

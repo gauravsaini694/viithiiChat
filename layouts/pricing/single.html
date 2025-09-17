@@ -1,0 +1,239 @@
+{{ define "main" }}
+
+<!-- Hero Section -->
+<section class="hero-section ">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold mb-3">Select the Ideal Plan</h1>
+        <p class="lead mb-4">Pick the plan that best fits your business needs.<br>
+            You can start with a free plan and upgrade to premium as you grow.</p>
+
+
+    </div>
+</section>
+
+<!-- Pricing Plans -->
+<section>
+    <div class="text-center">
+        <div class="toggle-switch ">
+            <div class="toggle-option active" data-period="monthly">Monthly</div>
+            <div class="toggle-option" data-period="yearly">Yearly (save 20%)</div>
+        </div>
+    </div>
+
+    <div class="container my-5 " id="pricing-plans">
+        <div class="col-md-9 mx-auto">
+            <div class="row g-4">
+                <!-- Pro Plan -->
+                <div class="col-lg-4">
+                    <div class="pricing-card h-100">
+                        <div class=" mb-4">
+                            <h3 class="fw-bold">Pro</h3>
+                            <div class="price" id="pro-price">$19</div>
+                            <p class=" pricing-period" id="pro-period">per month</p>
+                        </div>
+
+                        <h6 class="fw-bold mb-3">What's Included</h6>
+                        <ul class="feature-list">
+                            <li><img src="/img/right.svg" alt=""> <span>2</span> AI Agents</li>
+                            <li><img src="/img/right.svg" alt=""> <span></span>500</span> Training Links</li>
+                            <li><img src="/img/right.svg" alt=""> <span>50,000,000</span> Character Agent</li>
+                            <li><img src="/img/right.svg" alt=""> <span>4,000</span> Messages</li>
+                            <li><img src="/img/right.svg" alt=""> Up to <span>500</span> Lead Generation</li>
+                            <li><img src="/img/right.svg" alt=""> <span>200</span> Files Upload</li>
+                            <li><img src="/img/right.svg" alt=""> Multiple Language</li>
+                            <li><img src="/img/right.svg" alt=""> Can Live Integration</li>
+                            <li><img src="/img/wrong.svg" alt=""> Remove Brand</li>
+                        </ul>
+
+                        <button class="btn btn-outline-custom btn-subscribe mt-4">Subscribe</button>
+                        <div class="text-center mt-3">
+                            <small><i class="fas fa-phone"></i> Book a demo</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Plan -->
+                <div class="col-lg-4">
+                    <div class="pricing-card popular h-100">
+                        <div class="popular-badge">Most Popular</div>
+                        <div class=" mb-4">
+                            <h3 class="fw-bold">Business</h3>
+                            <div class="price" id="business-price">$99</div>
+                            <p class="text-muted pricing-period" id="business-period">per month</p>
+                        </div>
+
+                        <h6 class="fw-bold mb-3">What's Included</h6>
+                        <ul class="feature-list">
+                            <li><img src="/img/right.svg" alt=""> <span> 5</span> AI Agents</li>
+                            <li><img src="/img/right.svg" alt=""> <span> 2000</span> Training Links</li>
+                            <li><img src="/img/right.svg" alt=""> <span>100,000,000</span> Character Agent</li>
+                            <li><img src="/img/right.svg" alt=""> <span></span>10,000</span> Messages</li>
+                            <li><img src="/img/right.svg" alt=""> Up to <span>5,000</span> Lead Generation</li>
+                            <li><img src="/img/right.svg" alt=""> <span>2000</span> Files Upload</li>
+                            <li><img src="/img/right.svg" alt=""> Multiple Language</li>
+                            <li><img src="/img/right.svg" alt=""> Can Live Integration</li>
+                            <li><img src="/img/wrong.svg" alt=""> Remove Brand</li>
+                        </ul>
+
+                        <button class="btn btn-primary-custom btn-subscribe mt-4">Subscribe</button>
+                        <div class="text-center mt-3">
+                            <small><i class="fas fa-phone"></i> Book a demo</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="col-lg-4">
+                    <div class="pricing-card h-100">
+                        <div class=" mb-4">
+                            <h3 class="fw-bold">Enterprise</h3>
+                            <div class="price" id="enterprise-price">$999</div>
+                            <p class="text-muted pricing-period" id="enterprise-period">per month</p>
+                        </div>
+
+                        <h6 class="fw-bold mb-3">What's Included</h6>
+                        <ul class="feature-list">
+                            <li><img src="/img/right.svg" alt=""> Unlimited AI Agents</li>
+                            <li><img src="/img/right.svg" alt=""> Unlimited Training Links</li>
+                            <li><img src="/img/right.svg" alt=""> Unlimited Character Agent</li>
+                            <li><img src="/img/right.svg" alt=""> <span>100,000</span> Messages</li>
+                            <li><img src="/img/right.svg" alt=""> Unlimited Lead Generation</li>
+                            <li><img src="/img/right.svg" alt=""> Unlimited Files Upload</li>
+                            <li><img src="/img/right.svg" alt=""> Multiple Language</li>
+                            <li><img src="/img/right.svg" alt=""> Can Live Integration</li>
+                            <li><img src="/img/wrong.svg" alt=""> Remove Brand</li>
+                        </ul>
+
+                        <button class="btn btn-outline-custom btn-subscribe mt-4">Subscribe</button>
+                        <div class="text-center mt-3">
+                            <small><i class="fas fa-phone"></i> Book a demo</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Free Demo Section -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="pricing-card">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h4>Free Demo</h4>
+                                <p class="subtext">Test drive AI Agent chatbot integration.<br> No credit card required.
+                                    Get
+                                    started in 3 minutes.</p>
+                            </div>
+                            <div class="col-md-6 ">
+                                <h6 class="fw-bold">What's Included</h6>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p><img src="/img/right.svg" alt=""> <span class="span-bt">1 </span> AI Agent
+                                        </p>
+                                        <p><img src="/img/right.svg" alt=""> <span class="span-bt">5 </span> Training
+                                            Links</p>
+                                        <p><img src="/img/right.svg" alt=""> <span class="span-bt">500,000 </span>
+                                            Character Agent</p>
+                                        <p><img src="/img/right.svg" alt=""> <span class="span-bt">50 </span> Messages
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p><img src="/img/right.svg" alt=""> Up to <span class="span-bt">5</span> Lead
+                                            Generation</p>
+                                        <p><img src="/img/right.svg" alt=""> <span class="span-bt">20</span> Files
+                                            Upload</p>
+                                        <p><img src="/img/wrong.svg" alt=""> Remove Brand - Add-on</p>
+                                        <p><img src="/img/right.svg" alt=""> English Language Only</p>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline-custom mt-3">Get Started</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add-ons Section -->
+<section class="add-ons-section">
+    <div class="container">
+        <div class="col-md-9 mx-auto">
+            <h2 class=" fw-bold mb-5"><i class="fas fa-plus-circle"></i> Add-Ons</h2>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="addon-card">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h6 class="fw-bold mb-1">Extra Messages</h6>
+                            <img src="/img/Messages.svg" alt="">
+                        </div>
+                        <p>Additional message credits</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <strong>$10/ <small>1000</small></strong>
+                            <button class="btn btn-sm btn-outline-dark">Add On</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="addon-card">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h6 class="fw-bold mb-1">Extra AI Agent</h6>
+                            <img src="/img/AI.svg" alt="">
+                        </div>
+                        <p>Add more AI agents</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <strong>$10/ <small>month</small></strong>
+                            <button class="btn btn-sm btn-outline-dark">Add On</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="addon-card">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h6 class="fw-bold mb-1">Remove Brand</h6>
+                            <img src="/img/Brand.svg" alt="">
+                        </div>
+                        <p>Remove the GetChat branding from widget</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <strong>$10/ <small>month</small></strong>
+                            <button class="btn btn-sm btn-outline-dark">Add On</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="addon-card">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h6 class="fw-bold mb-1">Custom Brand</h6>
+                            <img src="/img/Custom.svg" alt="">
+                        </div>
+                        <p>Customize the GetChat branding from widget</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <strong>$100/ <small>month</small></strong>
+                            <button class="btn btn-sm btn-outline-dark">Add On</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 bg-light p-4 rounded">
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Get in touch to Receive Your Quote</h5>
+                </div>
+                <div class="col-md-6">
+                    <h5 >Dedicated account management</h5>
+                    <p>More advanced features for enterprise customer to ensure your success</p>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-dark btn-sm mt-2">CONTACT US</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{{end}}
