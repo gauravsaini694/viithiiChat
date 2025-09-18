@@ -47,6 +47,8 @@ img {
   margin-bottom: 10px;
 }
 
+
+
 /* NAV */
 .navbar-blur {
   backdrop-filter: blur(8px);
@@ -73,6 +75,14 @@ img {
   opacity: .9;
 }
 
+.ai-btn{
+  border: 1px solid #fff !important;
+  border-radius: 10px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
 /* HERO */
 .hero {
   position: relative;
@@ -81,11 +91,11 @@ img {
   width: 100%;
   /* min-height: 86vh;  */
   color: #fff;
-  background-image: url("/img/hero-gali.webp");
+  /* background-image: url("/img/hero-viithii.jpeg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(rgba(5, 10, 25, 0), rgba(5, 10, 25, 0)), url("/img/hero-gali.webp");
+ background-image: linear-gradient(rgb(5 10 25 / 49%), rgb(5 10 25 / 59%)), url(/img/hero-viithii1.jpeg);
 }
 
 

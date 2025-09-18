@@ -1,10 +1,41 @@
- <nav class="navbar navbar-expand-lg  fixed-top ">
-    <div class="col-md-6 mx-auto" style="background-color: #212121; border-radius: 20px; padding: 5px;">
-      <div class="container d-flex justify-content-between ">
-        <!-- Left: Logo -->
-        <a class="navbar-brand fw-bold" href="/"> <img style="width: 20px;" src="/img/favicon.png" alt="">iithiiChat</a>
+<!-- <nav class="navbar navbar-expand-lg  fixed-top">
+  <div class="col-md-6 mx-auto" style="background-color: #212121; border-radius: 20px; padding: 5px;">
+    <div class="container d-flex justify-content-between">
+      <a class="navbar-brand fw-bold" href="/"> 
+        <img style="width: 20px;" src="/img/favicon.png" alt=""> iithiiChat
+        
+      </a>
 
-        <!-- Center: Nav links -->
+      <div class="collapse navbar-collapse justify-content-center" id="topnav">
+        <ul class="navbar-nav gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="/discover">Discover</a></li>
+          <li class="nav-item"><a class="nav-link" href="/usecases">Usecases</a></li>
+          <li class="nav-item"><a class="nav-link" href="/affiliates">Affiliates</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pricing">Pricing</a></li>
+        </ul>
+      </div>
+
+      <div class="d-flex align-items-center">
+        <a class="nav-link me-2" href="/signin">Sign In</a>
+        <a class="btn btn-sm btn-light text-dark px-3" style="border-radius: 20px;" href="/">Free Demo</a>
+      </div>
+
+      <button class="navbar-toggler navbar-dark border-white" type="button" data-bs-toggle="collapse" data-bs-target="#topnav"
+        aria-controls="topnav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</nav> -->
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="col-md-6 mx-auto nav-box">
+    <div class="container ">
+      <div class="d-flex justify-content-between">
+        <a class="navbar-brand fw-bold" href="/">
+          <img src="/img/viiithiichat-logo.svg" alt="">
+        </a>
+        <!-- Links -->
         <div class="collapse navbar-collapse justify-content-center" id="topnav">
           <ul class="navbar-nav gap-lg-3">
             <li class="nav-item"><a class="nav-link" href="/discover">Discover</a></li>
@@ -14,17 +45,53 @@
           </ul>
         </div>
 
-        <!-- Right: Sign in + Demo -->
         <div class="d-flex align-items-center">
           <a class="nav-link me-2" href="/signin">Sign In</a>
           <a class="btn btn-sm btn-light text-dark px-3" style="border-radius: 20px;" href="/">Free Demo</a>
         </div>
 
-        <!-- Mobile toggle -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topnav"
-          aria-controls="topnav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Toggler -->
+        <button class="navbar-toggler navbar-dark border-white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#topnav" aria-controls="topnav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
+
+
+<style>
+  .nav-box {
+    background-color: #212121;
+    border-radius: 20px;
+    padding: 5px;
+  }
+
+  /* Mobile / iPad view ke liye */
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      position: absolute;
+      top: 70px;
+      /* navbar ke neeche */
+      left: 50%;
+      transform: translateX(-50%);
+      background: #212121;
+      border-radius: 20px;
+      width: 80%;
+      text-align: left;
+      padding: 20px;
+      z-index: 999;
+    }
+
+    .navbar-collapse .nav-link {
+      color: #fff !important;
+      padding: 10px 0;
+    }
+
+    .navbar-toggler {
+      background: #212121;
+      border-radius: 10px;
+    }
+  }
+</style>
