@@ -45,3 +45,111 @@
             document.getElementById('enterprise-period').textContent = data.enterprise.period;
         }
     </script>
+
+
+<!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Toastr for notifications -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+ <script>
+    $(function() {
+        $("#SignIn").on("submit", function(event) {
+            event.preventDefault();
+
+            var email = $("#email").val().trim();
+
+            var data = {
+                companyId: "66a0a8e533058404aa0550b4",
+                formId: "66a0a8e533058404aa0550ba",
+                locationId: "66a0a8e533058404aa0550b6",
+                source: "ViithiiChat",
+                fields: [{
+                    key: "name",
+                    value: name
+                }, {
+                    key: "email",
+                    value: email
+                }, {
+                    key: "phoneNumber",
+                    value: phoneNumber
+                }, {
+                    key: "message",
+                    value: message
+                }]
+            };
+
+            var SignIn = JSON.stringify(data);
+            $.ajax({
+                url: "https://crm-api.leadhooper.com/api/lead11",
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                type: "post",
+                data: SignIn,
+                success: function(d) {
+                    $("#SignIn")[0].reset();
+                    toastr.success(d.message);
+                    window.location = "/";
+
+                },
+                error: function(xhr, status, error) {
+                    var errorMessage = xhr.responseJSON ? xhr.responseJSON.message : 'Failed to submit form';
+                    toastr.error(errorMessage);
+                }
+            });
+        });
+    });
+</script>
+
+
+<script>
+    $(function() {
+        $("#HomeAppointment").on("submit", function(event) {
+            event.preventDefault();
+
+            var email = $("#email").val().trim();
+
+            var data = {
+                companyId: "66a0a8e533058404aa0550b4",
+                formId: "66a0a8e533058404aa0550ba",
+                locationId: "66a0a8e533058404aa0550b6",
+                source: "ViithiiChat",
+                fields: [{
+                    key: "name",
+                    value: "home page"
+                }, {
+                    key: "email",
+                    value: email
+                }, {
+                    key: "phoneNumber",
+                    value: "home page"
+                }, {
+                    key: "message",
+                    value: "home page"
+                }]
+            };
+
+            var HomeAppointment = JSON.stringify(data);
+            $.ajax({
+                url: "https://crm-api.leadhooper.com/api/lead11",
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                type: "post",
+                data: HomeAppointment,
+                success: function(d) {
+                    $("#HomeAppointment")[0].reset();
+                    toastr.success(d.message);
+                    window.location = "/";
+
+                },
+                error: function(xhr, status, error) {
+                    var errorMessage = xhr.responseJSON ? xhr.responseJSON.message : 'Failed to submit form';
+                    toastr.error(errorMessage);
+                }
+            });
+        });
+    });
+</script>

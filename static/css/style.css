@@ -960,7 +960,7 @@ ul {
 
 .right-section {
   flex: 1;
-  background: url('/img/hero-gali.jpg');
+  background: url('/img/contact-banner.svg');
   background-size: cover;
   background-position: center;
   color: white;
