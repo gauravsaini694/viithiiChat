@@ -8,7 +8,7 @@
             <h1 class="signin-title">Sign In</h1>
             <p class="signin-subtitle">Enter your email address to get started</p>
 
-            <button class="google-signin">
+            <!-- <button class="google-signin">
                 <svg class="google-icon" viewBox="0 0 24 24">
                     <path fill="#4285F4"
                         d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
@@ -22,7 +22,7 @@
                 Sign in with Google
             </button>
 
-            <div class="divider">OR</div>
+            <div class="divider">OR</div> -->
 
             <form id="SignIn" >
                 <div class="form-group">
@@ -47,13 +47,13 @@
                 </div>
             </form>
 
-            <div class="forgot-password">
+            <!-- <div class="forgot-password">
                 <a href="#">Forgot password?</a>
             </div>
 
             <div class="form-footer">
                 Don't have an account? <a href="#">Create Account</a>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -62,4 +62,60 @@
 
     </div>
 </div>
+
+<!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Toastr for notifications -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+ <script>
+    $(function() {
+        $("#SignIn").on("submit", function(event) {
+            event.preventDefault();
+
+            var email = $("#email").val().trim();
+
+            var data = {
+                companyId: "66a0a8e533058404aa0550b4",
+                formId: "66a0a8e533058404aa0550ba",
+                locationId: "66a0a8e533058404aa0550b6",
+                source: "ViithiiChat",
+                fields: [{
+                    key: "name",
+                    value: name
+                }, {
+                    key: "email",
+                    value: email
+                }, {
+                    key: "phoneNumber",
+                    value: phoneNumber
+                }, {
+                    key: "message",
+                    value: message
+                }]
+            };
+
+            var SignIn = JSON.stringify(data);
+            $.ajax({
+                url: "https://crm-api.leadhooper.com/api/lead",
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                type: "post",
+                data: SignIn,
+                success: function(d) {
+                    $("#SignIn")[0].reset();
+                    toastr.success(d.message);
+                    window.location = "/";
+
+                },
+                error: function(xhr, status, error) {
+                    var errorMessage = xhr.responseJSON ? xhr.responseJSON.message : 'Failed to submit form';
+                    toastr.error(errorMessage);
+                }
+            });
+        });
+    });
+</script>
 {{end}}
