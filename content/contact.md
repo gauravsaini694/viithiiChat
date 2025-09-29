@@ -1,8 +1,8 @@
 ---
-title: " signin viithiiChat"
-description : "signin viithiiChat"
+title: " contact viithiiChat"
+description : "contact viithiiChat"
 draft: false
-type: "signin"
+type: "contact"
 noheader: true
 ---
 

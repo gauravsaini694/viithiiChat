@@ -98,6 +98,20 @@ img {
   background-image: linear-gradient(rgb(5 10 25 / 49%), rgb(5 10 25 / 59%)), url(/img/hero-viithii1.jpeg);
 }
 
+.Consultation {
+  font-size: 18px;
+  border-radius: 20px;
+  font-weight: 800;
+  padding: 10px 35px;
+}
+
+.Free-Demo {
+  font-size: 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  padding: 5px 35px;
+}
+
 
 .hero h1 {
   font-weight: 800;
@@ -1316,24 +1330,25 @@ ul {
   .Features-p {
     font-size: 14px;
     color: #9e9e9e;
-}
-.languages-section {
+  }
+
+  .languages-section {
     padding: 0px 0;
     text-align: center;
-}
+  }
 
-.aiphone{
-  margin-top: 30px;
-}
+  .aiphone {
+    margin-top: 30px;
+  }
 
-.world-bg {
+  .world-bg {
     background: url(/img/worldmap.png) center / contain no-repeat;
     height: 320px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+  }
 
   .subscribe-btn {
     width: 100%;
@@ -1380,7 +1395,7 @@ ul {
     font-weight: 800;
     font-size: 20px;
     color: #263238;
-}
+  }
 
   .subtitle-p {
     font-size: 16px;
@@ -1395,16 +1410,18 @@ ul {
     font-weight: 800;
     font-size: 22px;
     color: #263238;
-}
-#Discover .card-title {
+  }
+
+  #Discover .card-title {
     font-size: 16px;
     font-weight: bold;
     margin: 0 0 8px 0;
-}
+  }
 
-.h5, h5 {
+  .h5,
+  h5 {
     font-size: 16px;
-}
+  }
 
   .lead {
     font-size: 14px;
@@ -1415,7 +1432,7 @@ ul {
   p {
     font-size: 14px;
     color: #757575;
-}
+  }
 
   .stat .subheading {
     font-size: 18px;
@@ -1429,7 +1446,7 @@ ul {
     color: hsla(0, 0%, 100%, .6);
     line-height: 20px;
     margin-top: 14px;
-}
+  }
 
   .stat h2 {
     font-size: 36px;
@@ -1438,7 +1455,7 @@ ul {
   #setup p {
     font-size: 14px;
     color: #757575;
-}
+  }
 
   .Industry-h2,
   .Features-h2,
@@ -1466,7 +1483,7 @@ ul {
     /* margin-bottom: 8px; */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     line-height: 18px;
-}
+  }
 
   .form-container {
     flex-wrap: wrap;
@@ -1498,24 +1515,25 @@ ul {
   .welcome-title {
     font-size: 2.2rem;
   }
+
   .affiliates .lead {
     opacity: .9;
     font-size: 16px;
     color: #757575;
     font-weight: 400;
-}
+  }
 
-.display-4 {
+  .display-4 {
     font-size: 25px;
     font-weight: 300;
     line-height: 1.2;
-}
+  }
 
-.hero-section {
+  .hero-section {
     background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     color: white;
     padding: 130px 0px 70px 0px;
-}
+  }
 
   .brand-name {
     font-size: 3rem;
